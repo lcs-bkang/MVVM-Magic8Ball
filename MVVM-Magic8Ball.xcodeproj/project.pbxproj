@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A6E05E7426F4ED3100DD8795 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7326F4ED3100DD8795 /* main.swift */; };
 		A6E05E7C26F4EFE300DD8795 /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7B26F4EFE300DD8795 /* Magic8Ball.swift */; };
+		A6E05E7E26F4F31600DD8795 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7D26F4F31600DD8795 /* Session.swift */; };
+		A6E05E8226F4F60600DD8795 /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E8126F4F60600DD8795 /* AdviceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +29,8 @@
 		A6E05E7026F4ED3100DD8795 /* MVVM-Magic8Ball */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MVVM-Magic8Ball"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E05E7326F4ED3100DD8795 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A6E05E7B26F4EFE300DD8795 /* Magic8Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8Ball.swift; sourceTree = "<group>"; };
+		A6E05E7D26F4F31600DD8795 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		A6E05E8126F4F60600DD8795 /* AdviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +63,9 @@
 		A6E05E7226F4ED3100DD8795 /* MVVM-Magic8Ball */ = {
 			isa = PBXGroup;
 			children = (
+				A6E05E8026F4F53A00DD8795 /* ViewModels */,
+				A6E05E7F26F4F52400DD8795 /* Views */,
 				A6E05E7A26F4EFB400DD8795 /* Model */,
-				A6E05E7326F4ED3100DD8795 /* main.swift */,
 			);
 			path = "MVVM-Magic8Ball";
 			sourceTree = "<group>";
@@ -69,8 +74,25 @@
 			isa = PBXGroup;
 			children = (
 				A6E05E7B26F4EFE300DD8795 /* Magic8Ball.swift */,
+				A6E05E7D26F4F31600DD8795 /* Session.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A6E05E7F26F4F52400DD8795 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6E05E7326F4ED3100DD8795 /* main.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A6E05E8026F4F53A00DD8795 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A6E05E8126F4F60600DD8795 /* AdviceViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E05E8226F4F60600DD8795 /* AdviceViewModel.swift in Sources */,
 				A6E05E7426F4ED3100DD8795 /* main.swift in Sources */,
 				A6E05E7C26F4EFE300DD8795 /* Magic8Ball.swift in Sources */,
+				A6E05E7E26F4F31600DD8795 /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

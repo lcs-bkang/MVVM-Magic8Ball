@@ -5,6 +5,9 @@
 //  Created by Russell Gordon on 2021-09-16.
 //
 
+// Make an instance of the ViewModel (to store questions and advice
+var advisor = AdviceViewModel()
+
 import Foundation
 
 // Program name
@@ -27,12 +30,6 @@ print("")
 print("You said: \(input)")
 print("")
 
-// Provide a response based on the random value
-// BASED UPON: https://en.wikipedia.org/wiki/Magic_8-Ball#Possible_answers
-// TIP: Use the library to get code templates
-//      Command-Shift-L
-//
 
 // Provide the advice by making an instance of the Magic8Ball type and then getting a response
-let response = Magic8Ball()
-print(response.getResponse())
+print(advisor.provideResponseFor(givenQuery: input))

@@ -15,7 +15,7 @@ struct Magic8Ball {
     
     // Open the Library
     // Command + Shift + L
-    func getResponse() -> String {
+    static func getResponse() -> String {
         let responses = [
             // Affirmative answers
              "It is certain",
