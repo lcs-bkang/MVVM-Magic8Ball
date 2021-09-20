@@ -11,7 +11,9 @@ import SwiftUI
 struct iOS_MVVM_Magic8BallApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
         }
     }
 }

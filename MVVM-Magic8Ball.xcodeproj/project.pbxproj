@@ -14,13 +14,65 @@
 		A61E022126F90D490000DBD5 /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E8126F4F60600DD8795 /* AdviceViewModel.swift */; };
 		A61E022226F90D4D0000DBD5 /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7B26F4EFE300DD8795 /* Magic8Ball.swift */; };
 		A61E022326F90D500000DBD5 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7D26F4F31600DD8795 /* Session.swift */; };
+		A61E022A26F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A61E022926F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A61E022F26F914910000DBD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61E022E26F914910000DBD5 /* Assets.xcassets */; };
+		A61E023526F914920000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A61E023426F914920000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A61E023A26F914920000DBD5 /* MVVM_Magic8BallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E023926F914920000DBD5 /* MVVM_Magic8BallApp.swift */; };
+		A61E023C26F914920000DBD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E023B26F914920000DBD5 /* ContentView.swift */; };
+		A61E023E26F914920000DBD5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E023D26F914920000DBD5 /* NotificationController.swift */; };
+		A61E024026F914920000DBD5 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E023F26F914920000DBD5 /* NotificationView.swift */; };
+		A61E024226F914920000DBD5 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E024126F914920000DBD5 /* ComplicationController.swift */; };
+		A61E024426F914940000DBD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61E024326F914940000DBD5 /* Assets.xcassets */; };
+		A61E024726F914940000DBD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61E024626F914940000DBD5 /* Preview Assets.xcassets */; };
+		A61E025526F915520000DBD5 /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E8126F4F60600DD8795 /* AdviceViewModel.swift */; };
+		A61E025626F915560000DBD5 /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7B26F4EFE300DD8795 /* Magic8Ball.swift */; };
+		A61E025726F9155A0000DBD5 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7D26F4F31600DD8795 /* Session.swift */; };
 		A6E05E7426F4ED3100DD8795 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7326F4ED3100DD8795 /* main.swift */; };
 		A6E05E7C26F4EFE300DD8795 /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7B26F4EFE300DD8795 /* Magic8Ball.swift */; };
 		A6E05E7E26F4F31600DD8795 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7D26F4F31600DD8795 /* Session.swift */; };
 		A6E05E8226F4F60600DD8795 /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E8126F4F60600DD8795 /* AdviceViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A61E022B26F9148C0000DBD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6E05E6826F4ED3100DD8795 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A61E022826F9148C0000DBD5;
+			remoteInfo = "watchOS-MVVM-Magic8Ball WatchKit App";
+		};
+		A61E023626F914920000DBD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6E05E6826F4ED3100DD8795 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A61E023326F914920000DBD5;
+			remoteInfo = "watchOS-MVVM-Magic8Ball WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		A61E024D26F914950000DBD5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A61E023526F914920000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61E025126F914950000DBD5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A61E022A26F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6E05E6E26F4ED3100DD8795 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,6 +90,19 @@
 		A61E021726F90C4F0000DBD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A61E021926F90C550000DBD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A61E021C26F90C550000DBD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A61E022626F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchOS-MVVM-Magic8Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61E022926F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchOS-MVVM-Magic8Ball WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61E022E26F914910000DBD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A61E023426F914920000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchOS-MVVM-Magic8Ball WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61E023926F914920000DBD5 /* MVVM_Magic8BallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_Magic8BallApp.swift; sourceTree = "<group>"; };
+		A61E023B26F914920000DBD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A61E023D26F914920000DBD5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A61E023F26F914920000DBD5 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		A61E024126F914920000DBD5 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A61E024326F914940000DBD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A61E024626F914940000DBD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A61E024826F914940000DBD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A61E024926F914950000DBD5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		A6E05E7026F4ED3100DD8795 /* MVVM-Magic8Ball */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MVVM-Magic8Ball"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E05E7326F4ED3100DD8795 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A6E05E7B26F4EFE300DD8795 /* Magic8Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8Ball.swift; sourceTree = "<group>"; };
@@ -47,6 +112,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		A61E021026F90C4F0000DBD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61E023126F914920000DBD5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,11 +154,45 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A61E022D26F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A61E022E26F914910000DBD5 /* Assets.xcassets */,
+			);
+			path = "watchOS-MVVM-Magic8Ball WatchKit App";
+			sourceTree = "<group>";
+		};
+		A61E023826F914920000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A61E023926F914920000DBD5 /* MVVM_Magic8BallApp.swift */,
+				A61E023B26F914920000DBD5 /* ContentView.swift */,
+				A61E023D26F914920000DBD5 /* NotificationController.swift */,
+				A61E023F26F914920000DBD5 /* NotificationView.swift */,
+				A61E024126F914920000DBD5 /* ComplicationController.swift */,
+				A61E024326F914940000DBD5 /* Assets.xcassets */,
+				A61E024826F914940000DBD5 /* Info.plist */,
+				A61E024926F914950000DBD5 /* PushNotificationPayload.apns */,
+				A61E024526F914940000DBD5 /* Preview Content */,
+			);
+			path = "watchOS-MVVM-Magic8Ball WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A61E024526F914940000DBD5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A61E024626F914940000DBD5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		A6E05E6726F4ED3100DD8795 = {
 			isa = PBXGroup;
 			children = (
 				A6E05E7226F4ED3100DD8795 /* MVVM-Magic8Ball */,
 				A61E021426F90C4F0000DBD5 /* iOS-MVVM-Magic8Ball */,
+				A61E022D26F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit App */,
+				A61E023826F914920000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit Extension */,
 				A6E05E7126F4ED3100DD8795 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +202,9 @@
 			children = (
 				A6E05E7026F4ED3100DD8795 /* MVVM-Magic8Ball */,
 				A61E021326F90C4F0000DBD5 /* iOS-MVVM-Magic8Ball.app */,
+				A61E022626F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball.app */,
+				A61E022926F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit App.app */,
+				A61E023426F914920000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +264,57 @@
 			productReference = A61E021326F90C4F0000DBD5 /* iOS-MVVM-Magic8Ball.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A61E022526F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A61E025226F914950000DBD5 /* Build configuration list for PBXNativeTarget "watchOS-MVVM-Magic8Ball" */;
+			buildPhases = (
+				A61E022426F9148C0000DBD5 /* Resources */,
+				A61E025126F914950000DBD5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A61E022C26F9148C0000DBD5 /* PBXTargetDependency */,
+			);
+			name = "watchOS-MVVM-Magic8Ball";
+			productName = "watchOS-MVVM-Magic8Ball";
+			productReference = A61E022626F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		A61E022826F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A61E024E26F914950000DBD5 /* Build configuration list for PBXNativeTarget "watchOS-MVVM-Magic8Ball WatchKit App" */;
+			buildPhases = (
+				A61E022726F9148C0000DBD5 /* Resources */,
+				A61E024D26F914950000DBD5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A61E023726F914920000DBD5 /* PBXTargetDependency */,
+			);
+			name = "watchOS-MVVM-Magic8Ball WatchKit App";
+			productName = "watchOS-MVVM-Magic8Ball WatchKit App";
+			productReference = A61E022926F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A61E023326F914920000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A61E024A26F914950000DBD5 /* Build configuration list for PBXNativeTarget "watchOS-MVVM-Magic8Ball WatchKit Extension" */;
+			buildPhases = (
+				A61E023026F914920000DBD5 /* Sources */,
+				A61E023126F914920000DBD5 /* Frameworks */,
+				A61E023226F914920000DBD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchOS-MVVM-Magic8Ball WatchKit Extension";
+			productName = "watchOS-MVVM-Magic8Ball WatchKit Extension";
+			productReference = A61E023426F914920000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		A6E05E6F26F4ED3100DD8795 /* MVVM-Magic8Ball */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6E05E7726F4ED3100DD8795 /* Build configuration list for PBXNativeTarget "MVVM-Magic8Ball" */;
@@ -185,6 +345,15 @@
 					A61E021226F90C4F0000DBD5 = {
 						CreatedOnToolsVersion = 13.0;
 					};
+					A61E022526F9148C0000DBD5 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					A61E022826F9148C0000DBD5 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					A61E023326F914920000DBD5 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					A6E05E6F26F4ED3100DD8795 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -205,6 +374,9 @@
 			targets = (
 				A6E05E6F26F4ED3100DD8795 /* MVVM-Magic8Ball */,
 				A61E021226F90C4F0000DBD5 /* iOS-MVVM-Magic8Ball */,
+				A61E022526F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball */,
+				A61E022826F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit App */,
+				A61E023326F914920000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -216,6 +388,30 @@
 			files = (
 				A61E021D26F90C550000DBD5 /* Preview Assets.xcassets in Resources */,
 				A61E021A26F90C550000DBD5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61E022426F9148C0000DBD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61E022726F9148C0000DBD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61E022F26F914910000DBD5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61E023226F914920000DBD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61E024726F914940000DBD5 /* Preview Assets.xcassets in Resources */,
+				A61E024426F914940000DBD5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +430,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A61E023026F914920000DBD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61E025726F9155A0000DBD5 /* Session.swift in Sources */,
+				A61E025626F915560000DBD5 /* Magic8Ball.swift in Sources */,
+				A61E025526F915520000DBD5 /* AdviceViewModel.swift in Sources */,
+				A61E023E26F914920000DBD5 /* NotificationController.swift in Sources */,
+				A61E023C26F914920000DBD5 /* ContentView.swift in Sources */,
+				A61E024226F914920000DBD5 /* ComplicationController.swift in Sources */,
+				A61E023A26F914920000DBD5 /* MVVM_Magic8BallApp.swift in Sources */,
+				A61E024026F914920000DBD5 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6E05E6C26F4ED3100DD8795 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +457,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A61E022C26F9148C0000DBD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A61E022826F9148C0000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit App */;
+			targetProxy = A61E022B26F9148C0000DBD5 /* PBXContainerItemProxy */;
+		};
+		A61E023726F914920000DBD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A61E023326F914920000DBD5 /* watchOS-MVVM-Magic8Ball WatchKit Extension */;
+			targetProxy = A61E023626F914920000DBD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A61E021E26F90C550000DBD5 /* Debug */ = {
@@ -307,6 +531,151 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A61E024B26F914950000DBD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchOS-MVVM-Magic8Ball WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "watchOS-MVVM-Magic8Ball WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "watchOS-MVVM-Magic8Ball WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.watchOS-MVVM-Magic8Ball.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		A61E024C26F914950000DBD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"watchOS-MVVM-Magic8Ball WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "watchOS-MVVM-Magic8Ball WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "watchOS-MVVM-Magic8Ball WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.watchOS-MVVM-Magic8Ball.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		A61E024F26F914950000DBD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = watchOS_MVVM_Magic8Ball_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "watchOS-MVVM-Magic8Ball WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.watchOS-MVVM-Magic8Ball.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		A61E025026F914950000DBD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = watchOS_MVVM_Magic8Ball_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "watchOS-MVVM-Magic8Ball WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.watchOS-MVVM-Magic8Ball.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		A61E025326F914950000DBD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.watchOS-MVVM-Magic8Ball";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A61E025426F914950000DBD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.watchOS-MVVM-Magic8Ball";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -456,6 +825,33 @@
 			buildConfigurations = (
 				A61E021E26F90C550000DBD5 /* Debug */,
 				A61E021F26F90C550000DBD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A61E024A26F914950000DBD5 /* Build configuration list for PBXNativeTarget "watchOS-MVVM-Magic8Ball WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61E024B26F914950000DBD5 /* Debug */,
+				A61E024C26F914950000DBD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A61E024E26F914950000DBD5 /* Build configuration list for PBXNativeTarget "watchOS-MVVM-Magic8Ball WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61E024F26F914950000DBD5 /* Debug */,
+				A61E025026F914950000DBD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A61E025226F914950000DBD5 /* Build configuration list for PBXNativeTarget "watchOS-MVVM-Magic8Ball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61E025326F914950000DBD5 /* Debug */,
+				A61E025426F914950000DBD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
