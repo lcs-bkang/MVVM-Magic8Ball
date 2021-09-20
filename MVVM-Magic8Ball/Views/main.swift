@@ -5,50 +5,67 @@
 //  Created by Russell Gordon on 2021-09-16.
 //
 
-// Make an instance of the ViewModel (to store questions and advice
-var advisor = AdviceViewModel()
-
-// Make a variable to hold the value determining the loop
-var looping = 1
-
 import Foundation
 
-if looping == 1 {
-    // Program name
-    print("MAGIC 8 BALL")
-    print("============")
+// Make an instance of the view model (to store questions and advice)
+var advisor = AdviceViewModel()
+
+var input = ""
+// Program name
+print("MAGIC 8 BALL")
+print("============")
+
+// Loop until user chooses to quit
+while true {
     
     // Ask for user's question
     print("""
-NOTE: Questions should be phrased such
-      that they can be answered with a
-      yes or no response.
+    NOTE: Questions should be phrased such
+          that they can be answered with a
+          yes or no response.
 
-""")
+    """)
     print("What is your question? ")
+    
     // Get input as a non-optional String
-    let input = readLine()!
-    
-    // Print out their question
+    input = readLine()!
     print("")
-    print("You said: \(input)")
-    print("")
-    
-    
-    // Provide the advice by making an instance of the Magic8Ball type and then getting a response
+
+    // Provide the advice by using the view model
     print(advisor.provideResponseFor(givenQuery: input))
     
-    // Ask what the user would like to do
-    print("""
-          What would you like to do next?
-          1 - Ask another question
-          2 - See a history of past questions and answers
-          
-          
-          """)
-}
-// Iterate over all past advisor sessions
-for priorSession in advisor.sessions {
-    print(priorSession.question)
-    print(priorSession.response)
+    // Ask whether the user wants to continue or see history of advice
+    while true {
+        print("")
+        print("See history of advice given? (Y/N)")
+        let selection = readLine()!
+        if selection == "Y" {
+            
+            // Show history
+            print("")
+            print("History")
+            print("-------")
+            for session in advisor.sessions {
+                print(session.question)
+                print(session.response)
+                print("")
+            }
+            break
+            
+        } else if selection == "N" {
+            break
+        }
+    }
+    
+    // Ask whether the user wants to see more advice
+    while true {
+        print("More advice? (Y/N)")
+        let selection = readLine()!
+        if selection == "Y" {
+            break
+        } else if selection == "N" {
+            exit(0) // Exit program
+        }
+    }
+    
 }

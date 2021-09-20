@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A61E021626F90C4F0000DBD5 /* iOS_MVVM_Magic8BallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E021526F90C4F0000DBD5 /* iOS_MVVM_Magic8BallApp.swift */; };
+		A61E021826F90C4F0000DBD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E021726F90C4F0000DBD5 /* ContentView.swift */; };
+		A61E021A26F90C550000DBD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61E021926F90C550000DBD5 /* Assets.xcassets */; };
+		A61E021D26F90C550000DBD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61E021C26F90C550000DBD5 /* Preview Assets.xcassets */; };
 		A6E05E7426F4ED3100DD8795 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7326F4ED3100DD8795 /* main.swift */; };
 		A6E05E7C26F4EFE300DD8795 /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7B26F4EFE300DD8795 /* Magic8Ball.swift */; };
 		A6E05E7E26F4F31600DD8795 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7D26F4F31600DD8795 /* Session.swift */; };
@@ -26,6 +30,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A61E021326F90C4F0000DBD5 /* iOS-MVVM-Magic8Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-MVVM-Magic8Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61E021526F90C4F0000DBD5 /* iOS_MVVM_Magic8BallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_MVVM_Magic8BallApp.swift; sourceTree = "<group>"; };
+		A61E021726F90C4F0000DBD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A61E021926F90C550000DBD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A61E021C26F90C550000DBD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A6E05E7026F4ED3100DD8795 /* MVVM-Magic8Ball */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MVVM-Magic8Ball"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E05E7326F4ED3100DD8795 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A6E05E7B26F4EFE300DD8795 /* Magic8Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8Ball.swift; sourceTree = "<group>"; };
@@ -34,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A61E021026F90C4F0000DBD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6E05E6D26F4ED3100DD8795 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,10 +60,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A61E021426F90C4F0000DBD5 /* iOS-MVVM-Magic8Ball */ = {
+			isa = PBXGroup;
+			children = (
+				A61E021526F90C4F0000DBD5 /* iOS_MVVM_Magic8BallApp.swift */,
+				A61E021726F90C4F0000DBD5 /* ContentView.swift */,
+				A61E021926F90C550000DBD5 /* Assets.xcassets */,
+				A61E021B26F90C550000DBD5 /* Preview Content */,
+			);
+			path = "iOS-MVVM-Magic8Ball";
+			sourceTree = "<group>";
+		};
+		A61E021B26F90C550000DBD5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A61E021C26F90C550000DBD5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		A6E05E6726F4ED3100DD8795 = {
 			isa = PBXGroup;
 			children = (
 				A6E05E7226F4ED3100DD8795 /* MVVM-Magic8Ball */,
+				A61E021426F90C4F0000DBD5 /* iOS-MVVM-Magic8Ball */,
 				A6E05E7126F4ED3100DD8795 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				A6E05E7026F4ED3100DD8795 /* MVVM-Magic8Ball */,
+				A61E021326F90C4F0000DBD5 /* iOS-MVVM-Magic8Ball.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +135,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A61E021226F90C4F0000DBD5 /* iOS-MVVM-Magic8Ball */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A61E022026F90C550000DBD5 /* Build configuration list for PBXNativeTarget "iOS-MVVM-Magic8Ball" */;
+			buildPhases = (
+				A61E020F26F90C4F0000DBD5 /* Sources */,
+				A61E021026F90C4F0000DBD5 /* Frameworks */,
+				A61E021126F90C4F0000DBD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-MVVM-Magic8Ball";
+			productName = "iOS-MVVM-Magic8Ball";
+			productReference = A61E021326F90C4F0000DBD5 /* iOS-MVVM-Magic8Ball.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A6E05E6F26F4ED3100DD8795 /* MVVM-Magic8Ball */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6E05E7726F4ED3100DD8795 /* Build configuration list for PBXNativeTarget "MVVM-Magic8Ball" */;
@@ -125,6 +179,9 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					A61E021226F90C4F0000DBD5 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					A6E05E6F26F4ED3100DD8795 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -144,11 +201,33 @@
 			projectRoot = "";
 			targets = (
 				A6E05E6F26F4ED3100DD8795 /* MVVM-Magic8Ball */,
+				A61E021226F90C4F0000DBD5 /* iOS-MVVM-Magic8Ball */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		A61E021126F90C4F0000DBD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61E021D26F90C550000DBD5 /* Preview Assets.xcassets in Resources */,
+				A61E021A26F90C550000DBD5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		A61E020F26F90C4F0000DBD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61E021826F90C4F0000DBD5 /* ContentView.swift in Sources */,
+				A61E021626F90C4F0000DBD5 /* iOS_MVVM_Magic8BallApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6E05E6C26F4ED3100DD8795 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +242,69 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		A61E021E26F90C550000DBD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS-MVVM-Magic8Ball/Preview Content\"";
+				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.iOS-MVVM-Magic8Ball";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A61E021F26F90C550000DBD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS-MVVM-Magic8Ball/Preview Content\"";
+				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.iOS-MVVM-Magic8Ball";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		A6E05E7526F4ED3100DD8795 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -303,6 +445,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A61E022026F90C550000DBD5 /* Build configuration list for PBXNativeTarget "iOS-MVVM-Magic8Ball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61E021E26F90C550000DBD5 /* Debug */,
+				A61E021F26F90C550000DBD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A6E05E6B26F4ED3100DD8795 /* Build configuration list for PBXProject "MVVM-Magic8Ball" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
