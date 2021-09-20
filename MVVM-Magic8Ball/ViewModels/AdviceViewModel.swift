@@ -7,17 +7,17 @@
 
 import Foundation
 
-class AdviceViewModel {
+class AdviceViewModel: ObservableObject {
     
     // History of advice sessions
-    var sessions: [Session] = []
+    @Published var sessions: [Session] = []
     
     // Given a question, provide some advice
     //Library shortcut - Command + Shift + L
     func provideResponseFor(givenQuery: String) -> String {
         
         // Start an advice session
-        var currentSession = Session(question: input)
+        var currentSession = Session(question: givenQuery)
 
         // Use the static function right from the Magic8Ball type (no instance required)
         currentSession.response = Magic8Ball.getResponse()
@@ -29,3 +29,4 @@ class AdviceViewModel {
         return currentSession.response
     }
 }
+
