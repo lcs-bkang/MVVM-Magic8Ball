@@ -11,8 +11,22 @@ import SwiftUI
 struct MVVM_Magic8BallApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ContentView()
+            
+            TabView {
+                NavigationView {
+                    ContentView()
+                }
+                .tabItem {
+                    Image(systemName: "questionmark.circle")
+                    Text("Ask")
+                }
+                NavigationView {
+                    HistoryView()
+                }
+                .tabItem {
+                    Image(systemName: "clock.fill")
+                    Text("History")
+                }
             }
         }
 

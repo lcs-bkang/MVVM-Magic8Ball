@@ -27,6 +27,7 @@
 		A61E025526F915520000DBD5 /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E8126F4F60600DD8795 /* AdviceViewModel.swift */; };
 		A61E025626F915560000DBD5 /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7B26F4EFE300DD8795 /* Magic8Ball.swift */; };
 		A61E025726F9155A0000DBD5 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7D26F4F31600DD8795 /* Session.swift */; };
+		A6354FFA27024B9600B0B25A /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6354FF927024B9600B0B25A /* HistoryView.swift */; };
 		A6E05E7426F4ED3100DD8795 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7326F4ED3100DD8795 /* main.swift */; };
 		A6E05E7C26F4EFE300DD8795 /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7B26F4EFE300DD8795 /* Magic8Ball.swift */; };
 		A6E05E7E26F4F31600DD8795 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E05E7D26F4F31600DD8795 /* Session.swift */; };
@@ -103,6 +104,9 @@
 		A61E024626F914940000DBD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A61E024826F914940000DBD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A61E024926F914950000DBD5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A6354FF727024B9500B0B25A /* watchOS-MVVM-Magic8Ball-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "watchOS-MVVM-Magic8Ball-Bridging-Header.h"; sourceTree = "<group>"; };
+		A6354FF827024B9600B0B25A /* watchOS-MVVM-Magic8Ball WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "watchOS-MVVM-Magic8Ball WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
+		A6354FF927024B9600B0B25A /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		A6E05E7026F4ED3100DD8795 /* MVVM-Magic8Ball */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MVVM-Magic8Ball"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E05E7326F4ED3100DD8795 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A6E05E7B26F4EFE300DD8795 /* Magic8Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8Ball.swift; sourceTree = "<group>"; };
@@ -166,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				A61E023926F914920000DBD5 /* MVVM_Magic8BallApp.swift */,
-				A61E023B26F914920000DBD5 /* ContentView.swift */,
+				A6354FF6270248E900B0B25A /* Views */,
 				A61E023D26F914920000DBD5 /* NotificationController.swift */,
 				A61E023F26F914920000DBD5 /* NotificationView.swift */,
 				A61E024126F914920000DBD5 /* ComplicationController.swift */,
@@ -184,6 +188,17 @@
 				A61E024626F914940000DBD5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A6354FF6270248E900B0B25A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A61E023B26F914920000DBD5 /* ContentView.swift */,
+				A6354FF927024B9600B0B25A /* HistoryView.swift */,
+				A6354FF727024B9500B0B25A /* watchOS-MVVM-Magic8Ball-Bridging-Header.h */,
+				A6354FF827024B9600B0B25A /* watchOS-MVVM-Magic8Ball WatchKit App-Bridging-Header.h */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A6E05E6726F4ED3100DD8795 = {
@@ -347,9 +362,11 @@
 					};
 					A61E022526F9148C0000DBD5 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 					A61E022826F9148C0000DBD5 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 					A61E023326F914920000DBD5 = {
 						CreatedOnToolsVersion = 13.0;
@@ -441,6 +458,7 @@
 				A61E023C26F914920000DBD5 /* ContentView.swift in Sources */,
 				A61E024226F914920000DBD5 /* ComplicationController.swift in Sources */,
 				A61E023A26F914920000DBD5 /* MVVM_Magic8BallApp.swift in Sources */,
+				A6354FFA27024B9600B0B25A /* HistoryView.swift in Sources */,
 				A61E024026F914920000DBD5 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +624,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S2D4LD8KV4;
@@ -613,12 +632,19 @@
 				IBSC_MODULE = watchOS_MVVM_Magic8Ball_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "watchOS-MVVM-Magic8Ball WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.watchOS-MVVM-Magic8Ball.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "watchOS-MVVM-Magic8Ball WatchKit Extension/Views/watchOS-MVVM-Magic8Ball WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 8.0;
@@ -631,6 +657,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S2D4LD8KV4;
@@ -638,12 +665,18 @@
 				IBSC_MODULE = watchOS_MVVM_Magic8Ball_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "watchOS-MVVM-Magic8Ball WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.watchOS-MVVM-Magic8Ball.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "watchOS-MVVM-Magic8Ball WatchKit Extension/Views/watchOS-MVVM-Magic8Ball WatchKit App-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
@@ -654,13 +687,21 @@
 		A61E025326F914950000DBD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.watchOS-MVVM-Magic8Ball";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "watchOS-MVVM-Magic8Ball WatchKit Extension/Views/watchOS-MVVM-Magic8Ball-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -668,13 +709,20 @@
 		A61E025426F914950000DBD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.watchOS-MVVM-Magic8Ball";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "watchOS-MVVM-Magic8Ball WatchKit Extension/Views/watchOS-MVVM-Magic8Ball-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
